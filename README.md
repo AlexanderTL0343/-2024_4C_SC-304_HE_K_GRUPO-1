@@ -35,3 +35,5 @@ Esta clase se utiliza para representar un patrón de expresión regular, que es 
 |Alexander|Módulo Feed,Construir feed con Cola,Mostrar mensajes y comentarios,Destruir cola al finalizar,Formato identado comentarios,Mostrar cola feed
 |Sebas|Interfaz Usuarios,Formularios CRUD,Búsqueda y seguimiento,Validaciones,Testing,Integración módulos
 |Todos|Interfaz Mensajes,Interfaz Feed 
+
+# 
