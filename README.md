@@ -37,66 +37,66 @@ Esta clase se utiliza para representar un patrón de expresión regular, que es 
 |Todos|Interfaz Mensajes,Interfaz Feed 
 
 # Diseño de interfaces
-## Inicio
-- Crear Cuenta
+- Inicio
+  - Crear Cuenta
+  - Iniciar sesion
 - Iniciar sesion
-## Iniciar sesion
-- Correo
-- Contraseña
-- Aceptar
-- Volver
-## Crear Cuenta
-- Nombre
-- Apellido
-- Correo
-- Contraseña
-- Aceptar
-- Volver
-## Inicio 2
+  - Correo
+  - Contraseña
+  - Aceptar
+  - Volver
+- Crear Cuenta
+  - Nombre
+  - Apellido
+  - Correo
+  - Contraseña
+  - Aceptar
+  - Volver
+- Inicio 2
+  - Feed
+  - Administrar Perfil
+  - Cambiar de usuario
 - Feed
+  - Crear Publicacion
+  - Editar Publicacion
+  - Eliminar Publicacion
+  - Volver
 - Administrar Perfil
-- Cambiar de usuario
-## Feed
-- Crear Publicacion
-- Editar Publicacion
-- Eliminar Publicacion
-- Volver
-## Administrar Perfil
-- Nombre
-- Editar Perfil
-- Eliminar Cuenta
-- Volver
-- Correo
-- Seguir
+  - Nombre
+  - Editar Perfil
+  - Eliminar Cuenta
+  - Volver
+  - Correo
+  - Seguir
+  - Dejar De Seguir
+  - Usuarios Seguidos
 - Dejar De Seguir
-- Usuarios Seguidos
-## Dejar De Seguir
-- Correo
-- Aceptar
-- Volver
-## Editar Perfil
-- Nombre
-- Apellido
-- Aceptar
-- Volver
-## Seguir
-- Correo
-- Aceptar
-- Volver
-## Eliminar Cuenta
-- Aceptar
-- Volver
-- Escribir CONFIRMAR
-## Crear Publicacion
-- Escribir Publicacion 
-- Volver
-- Publicar
-## Editar Publicacion
-- Escribir Publicacion 
-- Volver
-- Publicar
-- ID Publicacion
-## Eliminar Publicacion
-- Volver
-- Aceptar
-- ID Publicacion
+  - Correo
+  - Aceptar
+  - Volver
+- Editar Perfil
+  - Nombre
+  - Apellido
+  - Aceptar
+  - Volver
+- Seguir
+  - Correo
+  - Aceptar
+  - Volver
+- Eliminar Cuenta
+  - Aceptar
+  - Volver
+  - Escribir CONFIRMAR
+- Crear Publicacion
+  - Escribir Publicacion 
+  - Volver
+  - Publicar
+- Editar Publicacion
+  - Escribir Publicacion 
+  - Volver
+  - Publicar
+  - ID Publicacion
+- Eliminar Publicacion
+  - Volver
+  - Aceptar
+  - ID Publicacion
