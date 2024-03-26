@@ -39,6 +39,9 @@ public class Menu {
                     verificarExistenciaUsuario();
                     break;
                 case 4:
+                    EditarUsuario();
+                    break;
+                case 5:
                     JOptionPane.showMessageDialog(null, "Saliendo del programa...");
                     break;
                 default:
@@ -75,4 +78,21 @@ public class Menu {
         else
             JOptionPane.showMessageDialog(null, "El usuario no existe en la lista.");
     }
+    public static boolean EditarUsuario() {
+        String nombreAntiguo = JOptionPane.showInputDialog(null, "Ingrese el nombre del usuario a editar:");
+
+        if (nombreAntiguo != null && !nombreAntiguo.isEmpty()) {
+            String nombreNuevo = JOptionPane.showInputDialog(null, "Ingrese el nuevo nombre para el usuario:");
+
+            if (nombreNuevo != null && !nombreNuevo.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Usuario editado correctamente. Nombre anterior: " + nombreAntiguo + ", nuevo nombre: " + nombreNuevo);
+                return true;
+            } else {
+                JOptionPane.showMessageDialog(null, "Debe ingresar un nombre válido.");
+                return false;
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Debe ingresar un nombre de usuario válido.");
+            return false;
+        }
 }
