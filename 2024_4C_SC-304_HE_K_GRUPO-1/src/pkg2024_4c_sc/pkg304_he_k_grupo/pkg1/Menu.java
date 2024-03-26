@@ -64,9 +64,34 @@ public class Menu {
     }
 
     public boolean EliminarUsuario() {
-    }
+        String nombre = JOptionPane.showInputDialog(null, "Ingrese el nombre del usuario a eliminar:");
+
+        if (nombre != null && !nombre.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Usuario con nombre '" + nombre + "' eliminado correctamente.");
+            return true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Debe ingresar un nombre de usuario válido.");
+            return false;
+           }
+      }
 
     public boolean EditarUsuario() {
+         String nombreAntiguo = JOptionPane.showInputDialog(null, "Ingrese el nombre del usuario a editar:");
+
+        if (nombreAntiguo != null && !nombreAntiguo.isEmpty()) {
+            String nombreNuevo = JOptionPane.showInputDialog(null, "Ingrese el nuevo nombre para el usuario:");
+
+            if (nombreNuevo != null && !nombreNuevo.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Usuario editado correctamente. Nombre anterior: " + nombreAntiguo + ", nuevo nombre: " + nombreNuevo);
+                return true;
+            } else {
+                JOptionPane.showMessageDialog(null, "Debe ingresar un nombre válido.");
+                return false;
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Debe ingresar un nombre de usuario válido.");
+            return false;
+        }
     }
 
 }
