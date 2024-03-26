@@ -24,7 +24,8 @@ public class Menu {
                     "1. Agregar usuario\n" +
                     "2. Eliminar usuario\n" +
                     "3. Verificar existencia de usuario\n" +
-                    "4. Salir\n" +
+                    "4. Editar Usuario\n"+
+                    "5. Salir\n" +
                     "Ingrese una opción:"
             ));
 
