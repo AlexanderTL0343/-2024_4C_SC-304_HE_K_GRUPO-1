@@ -20,6 +20,7 @@ public class Usuario {
     private String apellidos;
     private String correo;
     private Date fechaDeIngreso;
+    private int correoHash;
     private ListaDeSeguidores seguidores;
     private PilaPublicaciones mensajes;
 
@@ -28,8 +29,15 @@ public class Usuario {
         this.apellidos = apellidos;
         this.correo = correo;
         this.fechaDeIngreso = fechaDeIngreso;
+        correoHash = correo.hashCode();
     }
 
+    
+    
+    public int getHash(){
+        return correoHash;
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -60,22 +68,6 @@ public class Usuario {
 
     public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
-    }
-
-    public ListaDeSeguidores getSeguidores() {
-        return seguidores;
-    }
-
-    public void setSeguidores(ListaDeSeguidores seguidores) {
-        this.seguidores = seguidores;
-    }
-
-    public PilaPublicaciones getMensajes() {
-        return mensajes;
-    }
-
-    public void setMensajes(PilaPublicaciones mensajes) {
-        this.mensajes = mensajes;
     }
     
 }

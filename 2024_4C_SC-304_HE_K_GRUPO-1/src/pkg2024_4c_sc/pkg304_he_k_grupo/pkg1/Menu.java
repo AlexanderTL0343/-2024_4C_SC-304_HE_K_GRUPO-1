@@ -64,7 +64,7 @@ public class Menu {
 
     private void eliminarUsuario() {
         String correo = JOptionPane.showInputDialog("Ingrese el correo electrónico del usuario a eliminar:");
-        boolean eliminado = lcdUsuarios.eliminarUsuario(correo);
+        boolean eliminado = lcdUsuarios.eliminar(correo);
         if (eliminado)
             JOptionPane.showMessageDialog(null, "Usuario eliminado correctamente.");
         else
@@ -73,7 +73,7 @@ public class Menu {
 
     private void verificarExistenciaUsuario() {
         String correo = JOptionPane.showInputDialog("Ingrese el correo electrónico del usuario a verificar:");
-        boolean existe = lcdUsuarios.existeUsuario(correo);
+        boolean existe = lcdUsuarios.existe(correo);
         if (existe)
             JOptionPane.showMessageDialog(null, "El usuario existe en la lista.");
         else
@@ -96,4 +96,5 @@ public class Menu {
             JOptionPane.showMessageDialog(null, "Debe ingresar un nombre de usuario válido.");
             return false;
         }
+    }
 }
