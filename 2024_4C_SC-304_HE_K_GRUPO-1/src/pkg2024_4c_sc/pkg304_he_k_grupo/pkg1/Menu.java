@@ -48,7 +48,7 @@ public class Menu {
                 default:
                     JOptionPane.showMessageDialog(null, "Opción no válida. Inténtelo de nuevo.");
             }
-        } while (opcion != 4);
+        } while (opcion != 5);
     }
 
     private void agregarUsuario() {
